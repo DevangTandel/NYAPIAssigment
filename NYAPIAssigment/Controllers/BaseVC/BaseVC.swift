@@ -69,11 +69,11 @@ class BaseVC: UIViewController, UIGestureRecognizerDelegate {
 
 extension BaseVC {
     
-    func goBackToPreviousVC(){
+    @objc func goBackToPreviousVC(){
         self.navigationController?.popViewController(animated: true)
     }
     
-    func dismisCurrentVC(){
+    @objc func dismisCurrentVC(){
         self.dismiss(animated: true, completion: nil)
     }
     
